@@ -12,6 +12,7 @@
 - **零部署**：单个 HTML 文件，双击即可运行，无需安装或服务器
 - **本地优先**：全部数据仅保存在本地浏览器，不上传至任何服务器
 - **考试无关**：科目、权重、题量、时长均可自定义
+- **中英双语**：左下角「🌐 中文 / EN」一键切换界面语言
 
 [在线体验](https://color19.github.io/studyroom/) · [数据格式](docs/FORMAT.md) · [AI 流程](docs/AI_PIPELINE.md) · [English](#english)
 
@@ -186,6 +187,7 @@ python3 build.py --bank my/bank.json    # 生成 dist/personal.html（内嵌个�
 - Mistake log with spaced repetition (1/2/4/7/15 days), compressed to finish before your exam date
 - Knowledge cards with LaTeX, shown alongside explanations and editable in place
 - Printable one-page review sheet of your weakest topics
+- Bilingual UI: switch between English and 中文 with the 🌐 button (defaults to your browser language)
 
 **Quick start**: open [the live demo](https://color19.github.io/studyroom/) or `index.html`, try the sample questions, then go to 「导入题库」(Import) and load your CSV. Subject names are free-form. See [`docs/FORMAT.md`](docs/FORMAT.md) for the data format and [`docs/AI_PIPELINE.md`](docs/AI_PIPELINE.md) for the card pipeline.
 
