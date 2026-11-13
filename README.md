@@ -42,11 +42,14 @@
 | **学习仪表盘** | 以投资组合视角呈现进度：考纲权重为目标仓位，已做题量为实际仓位，薄弱科目一目了然 |
 | **章节练习** | 按来源、科目、章节筛选；支持 10 / 20 / 全部题量，随机或顺序作答 |
 | **模拟考试** | 整套原卷计时，或按科目权重随机组卷；交卷后生成成绩单与逐题解析 |
+| **专注模式** | 计时模考切换为仿真考试界面：全屏，仅保留题目、倒计时、标记与题目导航，右键可划掉选项 |
 | **冲刺计划** | 设定考试日期后，把剩余题目（可选刷 1 至 3 遍，第 3 遍可只刷错题）与全部 Mock 自动排进考前每一天；支持每天多科混合（按考纲权重 × 薄弱程度分配）或按科目专项；最后两天只复习；每天按最新进度自动重排 |
 | **错题本与间隔复习** | 错题自动收录，按 1 / 2 / 4 / 7 / 15 天间隔复习；设定考试日期后，复习计划将自动压缩至考前两天完成 |
+| **错题本分组** | 按做题时间分组，逐组清空；可按题目来源、最近 7 / 30 天筛选，已掌握的题可停止复习 |
 | **错因分析** | 按概念不清、计算错误、审题失误、粗心四类标记与筛选 |
 | **同类题推荐** | 针对错题推送同一知识点下尚未作答的新题 |
 | **知识卡** | 每个知识点一张卡片，支持 LaTeX 公式、要点与易错点；作答后随解析展示，可在页面内直接编辑 |
+| **翻卡与标记** | 知识卡可标为难点、易混或已懂；「考前一页纸」可切换为翻卡，支持题库自带问答（`fq`） |
 | **考前速览** | 自动汇总最薄弱的知识点及对应卡片，支持打印 |
 | **其他** | 暂停与断点续做、作答记录、学习报告、按章节组织的笔记、术语高亮 |
 
@@ -186,6 +189,7 @@ python3 build.py --bank my/bank.json    # 生成 dist/personal.html（内嵌个�
 - Topic practice, timed full-length or weighted-random mock exams with score reports
 - Mistake log with spaced repetition (1/2/4/7/15 days), compressed to finish before your exam date
 - Knowledge cards with LaTeX, shown alongside explanations and editable in place
+- Exam-style focus mode for timed mocks, a mistake log grouped by session, and flashcards with hard / confusable / known marks
 - Printable one-page review sheet of your weakest topics
 - Bilingual UI: switch between English and 中文 with the 🌐 button (defaults to your browser language)
 

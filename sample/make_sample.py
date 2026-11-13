@@ -116,6 +116,13 @@ JC = {
           'p': ['只适用于同标的、同行权价、同到期日的欧式期权', '任一项价格偏离都可以套利'], 't': ['X 要折现，S 不折现'], 'b': 1},
 }
 
+# 翻卡 (flashcards): optional question/answer per knowledge point. Points without one fall back to the knowledge card.
+FQ = {
+ '85.5': {'q': '同样是 12% 的报价利率，按月复利和按年复利，哪个 EAR 更高？高多少？', 'a': '按月复利更高：EAR = (1 + 0.12/12)^12 - 1 ≈ 12.68%，比按年复利的 12% 高约 0.68 个百分点。'},
+ '26.3': {'q': 'Gordon 增长模型什么时候不能用？', 'a': '要求回报率 r 不大于股利增速 g 时模型失效；它也不适合不分红或增速很不稳定的公司。'},
+ '101.1': {'q': '修正久期 7、收益率上升 50 个基点，债券价格大约变多少？', 'a': '约下跌 3.5%：-7 × 0.005 = -3.5%。收益率变动大时还要加凸性调整。'},
+}
+
 bank = {
  'format': 'studyroom/bank@1',
  'title': '示例题库 (原创演示题)',
@@ -123,7 +130,7 @@ bank = {
  'subjects': SUBJ,
  'sources': [{'id': 'demo', 'name': '示例题库 (原创)', 'short': '示例'}],
  'readings': list(readings.values()),
- 'q': qs, 'kp': TAX, 'gl': GL, 'jc': JC,
+ 'q': qs, 'kp': TAX, 'gl': GL, 'jc': JC, 'fq': FQ,
 }
 json.dump(bank, open(os.path.join(H, 'bank.sample.json'), 'w'), ensure_ascii=False, indent=1)
 print('questions', len(qs), 'cards', len(JC))
