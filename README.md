@@ -50,6 +50,7 @@
 | **同类题推荐** | 针对错题推送同一知识点下尚未作答的新题 |
 | **知识卡** | 每个知识点一张卡片，支持 LaTeX 公式、要点与易错点；作答后随解析展示，可在页面内直接编辑 |
 | **翻卡与标记** | 知识卡可标为难点、易混或已懂；「考前一页纸」可切换为翻卡，支持题库自带问答（`fq`） |
+| **生词本** | 做题时选中不认识的英文词即可收录，自动带上术语表释义和原句；按间隔复习，在 Claude 网站版中可一键让 Claude 解释 |
 | **考前速览** | 自动汇总最薄弱的知识点及对应卡片，支持打印 |
 | **其他** | 暂停与断点续做、作答记录、学习报告、按章节组织的笔记、术语高亮 |
 
@@ -190,6 +191,7 @@ python3 build.py --bank my/bank.json    # 生成 dist/personal.html（内嵌个�
 - Mistake log with spaced repetition (1/2/4/7/15 days), compressed to finish before your exam date
 - Knowledge cards with LaTeX, shown alongside explanations and editable in place
 - Exam-style focus mode for timed mocks, a mistake log grouped by session, and flashcards with hard / confusable / known marks
+- Vocabulary notebook: select an unfamiliar English word in a question to save it with its sentence, then review it on a schedule
 - Printable one-page review sheet of your weakest topics
 - Bilingual UI: switch between English and 中文 with the 🌐 button (defaults to your browser language)
 
